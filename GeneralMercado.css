@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('https://www.horus-proyectos.com/wp-content/uploads/2021/05/Supermercado.jpg'); 
+  
+}
+
+/* CONTAINER */
+
+.container {
+  align-items: center; 
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.nav-links{
+  padding: 25px;  
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  border-radius: 5px;
+  background-image: url('https://www.publicdomainpictures.net/pictures/380000/nahled/plain-white-background-1606139521arW.jpg'); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  display: inline-block; 
+    width: 200px; 
+    height: 50px;
+    text-align: center; 
+    line-height: 50px;
+    padding: 0; 
+}
+
+.nav-links svg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px; /* Ajusta el tamaño del ícono */
+  height: 20px;
+  fill: none;
+  stroke: #000; /* Color del ícono */
+}
+
+.container>.header, .container>.content, .container>.footer, .container>div {
+  padding: 20px;
+  
+}
+
+.container>.header {
+  grid-column: 1/-1;
+  background-image: url('https://elements-resized.envatousercontent.com/elements-video-cover-images/fe01b6d9-0699-4ecb-b2ac-46da5db7599a/video_preview/video_preview_0000.jpg?w=500&cf_fit=cover&q=85&format=auto&s=4a8685489ae612ae7932dd92750a18508a3419006821b5358eba0a0959a014c0'); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  color: #000000;
+}
+
+.container>.header{
+  text-align: center;
+  
+}
+
+.container>.content {
+  grid-column: span 1;
+}
+
+.content>.article {
+  background: #ffffff;
+  padding: 20px;
+  margin-top: 5px;
+  color: #000000;
+  border-radius: 20px;
+  
+}
+
+.Infop1{
+  padding: 30px 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.Infop1 button{
+  border: none;
+  background-color: #000;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  
+}
+
+.Precio{
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold; 
+}
+
+.content .article h1,
+.content .article p {
+  padding: 10px;
+}
+
+h1 {
+  font-size: 36px;          
+  font-weight: bold;         
+  color: rgb(255, 255, 255);             
+  animation: brillo 1s infinite alternate;
+}
+@keyframes brillo {
+  0% {
+    text-shadow: 0 0 5px #000000, 0 0 0px #ffffff, 0 0 0px #000000;
+  }
+  100% {
+    text-shadow: 0 0 30px #000000, 0 0 30px #000000, 0 0 30px #ffffff;
+  }
+}
+
+
+
+.container>.sidebar {
+  grid-column: span 4;
+  font-size: 25px;
+  background-image: url('https://elements-resized.envatousercontent.com/elements-video-cover-images/fe01b6d9-0699-4ecb-b2ac-46da5db7599a/video_preview/video_preview_0000.jpg?w=500&cf_fit=cover&q=85&format=auto&s=4a8685489ae612ae7932dd92750a18508a3419006821b5358eba0a0959a014c0');
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  border: 1px solid #e2e2e2 ;
+  color: #ffffff;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+  height: 10vh; 
+  animation: brillo 1s infinite alternate;
+}
+
+
+.container>.related-post {
+  background-color: #fffffff5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+  border: 1px solid #e2e2e2 ;
+}
+
+.container>.related-post:hover {
+  cursor: pointer;
+  background: rgb(223, 223, 223);
+  
+}
+
+.related-post a{
+  text-decoration: none; 
+    color: black;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+  .header {
+      text-align: center;
+      
+  }
+  .container .content {
+      grid-column: 1 / -1;
+  }
+  .container .sidebar {
+      grid-column: 1 / 6;
+  }
+
+  .container .related-post {
+      grid-column: 1/-1;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border-radius: 5px;
+    margin: 0 auto; 
+}
+
+.nav-links a {
+  width: 110%; 
+  box-sizing: border-box; 
+  
+}
+}
