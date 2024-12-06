@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-image: url('https://media.licdn.com/dms/image/D4E12AQEfliXjLfNcrg/article-cover_image-shrink_720_1280/0/1682023073023?e=2147483647&v=beta&t=3nCk8UDlkrnWAJFpFEo80E6CcixOZ_fbuG69b-3AqXk'); 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;   
+}
+
+
+
+nav {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  flex-wrap: wrap; 
+  padding: 0.5rem; 
+  gap: 0.5rem; 
+  border-bottom: solid 0.5px #aaa; 
+  background-color: #eee;
+  position: sticky;
+  top: 0;
+}
+
+.up{
+  padding: -0rem; 
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.5rem; 
+}
+
+.nav-links a {
+  text-decoration: none; 
+  color: black; 
+  transition: color 0.3s ease-in-out; 
+}
+
+
+nav a {
+  display: inline-block;
+  min-width: 9rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  text-align: center;
+  text-decoration: none;
+  color: #555;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+.form-register {
+  width: 500px;
+  background: rgb(105, 105, 105);
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  text-align: center;
+  border: 1px solid #ffffff;
+
+}
+
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  width: 100%;
+  background: #202020;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #ffffff;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+}
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+
+  
+}
+
+.form-register a {
+  color: white;
+  text-decoration: none;
+  
+
+}
+
+
+
+.form-register .botons {
+  width: 100%;
+  background: #3d3e41;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  background-color: white;
+  margin:  0;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 500px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  justify-self: center;
+}
+
+.styled-table thead tr {
+
+   background-color: #000000;
+   color:rgb(240, 248, 255);
+
+}
+
+.styled-table th,
+.styled-table td 
+{
+   padding: 12px 15px;
+}
+
+.styled-table tbody tr{
+   border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even){
+   background-color: #f3f3f3;
+}
+
+h1.logo a {
+  display: flex;
+  align-items: center; 
+  gap: 0.5rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+h1.logo svg {
+  display: block; 
+  width: 28px; 
+
+}
+
+
+
